@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            /* Add your flexbox styles here */
+            border: 3px dashed #666;
+            min-height: 400px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .pokemon-card {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            width: 150px;
+            text-align: center;
+            margin: 10px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .fire {
+            background-color: #FFEBEE;
+        }
+
+        .water {
+            background-color: #E3F2FD;
+        }
+
+        .grass {
+            background-color: #E8F5E9;
+        }
+
+        .electric {
+            background-color: #FFFDE7;
+        }
+
+        img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .instructions {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="instructions">
+    <h2>🎮 Pokémon Flexbox Challenge!</h2>
+    <p>Your task is to modify the .container class to achieve the following layouts:</p>
+    <ol>
+        <li>Make the Pokémon cards display in a row</li>
+        <li>Center the cards horizontally</li>
+        <li>Add space between the cards</li>
+    </ol>
+</div>
+
+<div class="container">
+    <div class="pokemon-card fire">
+        <img src="https://sg.portal-pokemon.com/play/resources/pokedex/img/pm/0aa78a0061bda9d88cbb0bbf739cd9cc56522fe9.png"
+             alt="Charizard">
+        <h3>Charizard</h3>
+        <p>Fire Type</p>
+    </div>
+    <div class="pokemon-card water">
+        <img src="https://images.gameinfo.io/pokemon/256/p9f111.png" alt="Blastoise">
+        <h3>Blastoise</h3>
+        <p>Water Type</p>
+    </div>
+    <div class="pokemon-card grass">
+        <img src="https://sg.portal-pokemon.com/play/resources/pokedex/img/pm/3bfcc4360c44f37815dc1e59f75818935cbfc41b.png"
+             alt="Venusaur">
+        <h3>Venusaur</h3>
+        <p>Grass Type</p>
+    </div>
+    <div class="pokemon-card electric">
+        <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/77/latest/20150621181250/Pikachu.png/800px-Pikachu.png"
+             alt="Pikachu">
+        <h3>Pikachu</h3>
+        <p>Electric Type</p>
+    </div>
+</div>
+</body>
+</html>
