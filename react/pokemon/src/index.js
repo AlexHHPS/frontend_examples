@@ -2,17 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './3/App.css';
 import App from './3/App';
-import {DevSupport} from "@react-buddy/ide-toolbox";
-import {ComponentPreviews, useInitial} from "./dev";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <DevSupport ComponentPreviews={ComponentPreviews}
-                    useInitialHook={useInitial}
-        >
             <App name="Pikachu" type="Electric"
                  image="https://images.wikidexcdn.net/mwuploads/wikidex/7/77/latest/20150621181250/Pikachu.png"/>
-        </DevSupport>
     </React.StrictMode>
 );
